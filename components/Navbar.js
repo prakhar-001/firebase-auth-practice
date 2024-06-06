@@ -45,16 +45,16 @@ const Navbar = () => {
     }
 
   return (
-        <div className='px-5 h-12 bg-blue-500 font-semibold'>
+        <div className='px-1 sm:px-5 h-12 bg-blue-500 font-semibold'>
             { userExists && (
                 <div className='flex justify-between items-center h-full w-full'>
                     <div><Link href={'/'}>Gym Tracker</Link></div>
                     <div>
-                        <ul className='flex justify-end gap-16'>
-                            <li><Link href='/'>Home</Link></li>
-                            <li><Link href='/page1'>Page 1</Link></li>
-                            <li><Link href='/page2'>Page 2</Link></li>
-                            <li><Link href='/page3'>Page 3</Link></li>
+                        <ul className='flex justify-end gap-3 sm:gap-16'>
+                            <li className='hidden sm:block'><Link href='/'>Home</Link></li>
+                            <li><Link href='/page1'>Page1</Link></li>
+                            <li><Link href='/page2'>Page2</Link></li>
+                            <li><Link href='/page3'>Page3</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -67,8 +67,8 @@ const Navbar = () => {
                     <div><Link href={'/'}>Gym Tracker</Link></div>
                     <div>
                         <ul className='flex justify-end gap-5'>
-                            <li><Link href='/'>Home</Link></li>
-                            <li><Link href='/sign-in'>Sign In</Link></li>
+                            <li  className='hidden sm:block'><Link href='/'>Home</Link></li>
+                            <li><Link href='/sign-up'>Sign Up</Link></li>
                             <li><Link href='/log-in'>Log In</Link></li>
                         </ul>
                     </div>

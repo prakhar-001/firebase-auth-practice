@@ -13,7 +13,7 @@ export default function Home() {
     <div>
 
       <main className=" flex flex-col items-center justify-between p-24">
-        <div className='text-5xl font-bold text-white '>
+        <div className='text-4xl sm:text-5xl font-bold text-white '>
           Home Page 
         </div>
         

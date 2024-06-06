@@ -13,7 +13,7 @@ export default function middleware(req) {
         )
     }
 
-    if(verifyCookie && (url.includes('/log-in') || url.includes('/sign-in')) ){
+    if(verifyCookie && (url.includes('/log-in') || url.includes('/sign-up')) ){
         return NextResponse.redirect(
             new URL('/', req.url)
         )

@@ -13,7 +13,12 @@ const page = () => {
 
   return (
     <UserOnlyRoute onUserUidReceived={handleUidReceived}>
-      <div>page 1</div>
+      <main className=" flex flex-col items-center justify-between p-24">
+        <div className='text-4xl sm:text-5xl font-bold text-white '>
+          Page 1 
+        </div>
+        
+      </main>
     </UserOnlyRoute>
   )
 }
